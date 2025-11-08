@@ -5,6 +5,7 @@ sudo yum install java-21-amazon-corretto -y
 sudo yum install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
+sudo yum install git -y
 
 #Trouble shooting steps to make executors run on Amazon Linux
 sudo mkdir -p /var/tmp_disk
@@ -14,3 +15,4 @@ echo '/var/tmp_disk /tmp none bind 0 0' | sudo tee -a /etc/fstab
 sudo systemctl mask tmp.mount
 df -h /tmp
 sudo systemctl restart jenkins
+
