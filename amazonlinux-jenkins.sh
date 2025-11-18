@@ -7,7 +7,7 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo yum install git -y
 
-#Trouble shooting steps to make executors run on Amazon Linux
+#Trouble shooting steps to make executors run on Amazon Linux and disk issue for slave server
 sudo mkdir -p /var/tmp_disk
 sudo chmod 1777 /var/tmp_disk
 sudo mount --bind /var/tmp_disk /tmp
